@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   db:
@@ -12,3 +12,4 @@ services:
       - '5432:5432'
     volumes:
       - ./postgresql:/var/lib/postgresql/data
+    restart: always
