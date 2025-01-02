@@ -5,6 +5,8 @@ services:
     image: postgres:latest
     container_name: postgres_container
     environment:
+      # 设置时区为上海
+      TZ: Asia/Shanghai
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin123456
       POSTGRES_DB: blogdb
