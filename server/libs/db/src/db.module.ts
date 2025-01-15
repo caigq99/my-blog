@@ -11,7 +11,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       password: 'admin123456',
       database: 'blogdb',
       // entities: ['./entities/*.entity.ts'],
-      // synchronize: true, // Don't use this in production
+      synchronize: true, // Don't use this in production
       autoLoadEntities: true, // auto load entities
     }),
   ],
